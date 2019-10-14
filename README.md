@@ -10,8 +10,9 @@ Install all dependencies
 ```sh
 npm install
 ```
+in both root directory and ./frontend directory
 
-Run the server
+Run the server in ./fronend directory and in root directory
 ```sh
 npm start
 ```
