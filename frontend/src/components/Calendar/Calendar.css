@@ -1,0 +1,16 @@
+.centered {
+    position: absolute;
+    left:40%;
+
+}
+.row {
+    height:30px;
+}
+.col {
+    width:40px;
+    text-align: center;
+    border: 1px solid black;
+}
+.col:hover {
+    background-color:#dadada;
+}

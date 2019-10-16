@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import AuthPage from './pages/Auth';
 import BookingsPage from './pages/Bookings';
 import EventsPage from './pages/Events';
+import CalendarPage from './pages/Calendar';
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
 
@@ -49,6 +50,8 @@ class App extends Component {
                 {this.state.token && (
                   <Route path="/bookings" component={BookingsPage} />
                 )}
+                  <Route path="/calendar" component={CalendarPage} />
+
                 {!this.state.token && <Redirect to="/auth" exact />}
               </Switch>
             </main>

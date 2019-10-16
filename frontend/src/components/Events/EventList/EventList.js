@@ -9,6 +9,7 @@ const eventList = props => {
       <EventItem
         key={event._id}
         eventId={event._id}
+        description={event.description}
         title={event.title}
         price={event.price}
         date={event.date}
@@ -18,7 +19,6 @@ const eventList = props => {
       />
     );
   });
-
   return <ul className="event__list">{events}</ul>;
 };
 
